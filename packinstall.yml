@@ -1,9 +1,6 @@
 ---
 
 - hosts: test-servers
-  remote_user: root
-  become: yes
-  become_method: sudo
   roles:
    - vsftpd
    - httpd
