@@ -1,6 +1,9 @@
 ---
 
 - hosts: test-servers
+  remote_user: root
+  become: ture
+  become_method: sudo
   roles:
    - vsftpd
    - httpd
