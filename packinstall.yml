@@ -2,7 +2,7 @@
 
 - hosts: test-servers
   remote_user: root
-  become: ture
+  become: yes
   become_method: sudo
   roles:
    - vsftpd
