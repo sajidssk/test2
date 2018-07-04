@@ -1,0 +1,10 @@
+---
+# tasks file for vsftpd
+
+- name: install vsftpd
+  yum:
+   name: vsftpd
+   state: installed
+  notify:
+   - start vsftpd
+
