@@ -1,0 +1,13 @@
+--- 
+- hosts: test-servers
+  tasks:
+   - name: install httpd and vsftpd 
+     yum:
+      name: "{{packages}}"
+      state: absent 
+     vars:
+      packages:
+       - httpd
+       - httpd-tools
+       - vsftpd
+      
