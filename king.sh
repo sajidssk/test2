@@ -1,2 +1,2 @@
 #!/bin/bash
-ehco " hai this is  sajid "
+echo " hai this is  sajid "
